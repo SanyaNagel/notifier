@@ -34,6 +34,7 @@ public class MailSenderJob  {
         simpleMailMessage.setTo(toAddress);
         simpleMailMessage.setSubject(subject);
         simpleMailMessage.setText(message);
+        System.out.println("Mail send msg");
         emailSender.send(simpleMailMessage);
     }
 
