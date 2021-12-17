@@ -22,10 +22,6 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-mail:2.6.1'
 }
 
-node{
-	download = true
-}
-
 test {
 	useJUnitPlatform()
 }
