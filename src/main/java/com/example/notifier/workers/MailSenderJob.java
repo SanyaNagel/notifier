@@ -27,7 +27,6 @@ public class MailSenderJob  {
                 "Текущее время: " + new Date().toString());
     }
 
-
     public void sendSimpleEmail(String toAddress, String subject, String message) {
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
