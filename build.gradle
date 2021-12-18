@@ -8,6 +8,18 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+buildscript {
+	repositories {
+		mavenCentral()
+		maven { url 'http://dl.bintray.com/vermeulen-mp/gradle-plugins' }
+	}
+	dependencies {
+		classpath "org.gradle.api.plugins:gradle-heroku:0.9.6"
+	}
+}
+
+apply plugin: 'heroku'
+
 repositories {
 	mavenCentral()
 }
@@ -22,8 +34,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-mail:2.6.1'
 }
 
-task stage(dependsOn: ['build', 'clean'])
-build.mustRunAfter clean
+//task stage(dependsOn: ['build', 'clean'])
+//build.mustRunAfter clean
 
 
 test {
