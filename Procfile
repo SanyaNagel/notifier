@@ -1,1 +1,1 @@
-web: java -jar build/libs/notifier-0.0.1-SNAPSHOT.jar
+web: java -jar -Dport=$PORT build/libs/notifier-0.0.1-SNAPSHOT.jar
